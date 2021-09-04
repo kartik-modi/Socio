@@ -53,3 +53,9 @@ whitenoise==5.2.0
 zope.event==4.5.0
 zope.interface==5.1.2
 djangorestframework
+dj-database-url
+django-heroku
+gunicorn
+psycopg2
+python-decouple
+whitenoise
