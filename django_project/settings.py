@@ -91,6 +91,9 @@ DATABASES = {
     }
 }
 
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
@@ -144,4 +147,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 django_heroku.settings(locals())
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
