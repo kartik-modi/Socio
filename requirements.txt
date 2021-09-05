@@ -53,5 +53,5 @@ whitenoise==5.2.0
 zope.event==4.5.0
 zope.interface==5.1.2
 djangorestframework
-
+django-cors-headers
 python-decouple
