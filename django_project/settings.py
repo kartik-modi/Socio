@@ -151,6 +151,3 @@ LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
 
 django_heroku.settings(locals())
-# STATICFILES_DIRS = (
-#     os.path.join(PROJECT_ROOT, 'staticfiles'),
-# )
